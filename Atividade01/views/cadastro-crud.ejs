@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    <title>Cadastro</title>
+</head>
+
+<body>
+    <button><a href="/">HOME</a></button> <button><a href="/formulario-crud">VOLTAR</a></button>
+    <h1>Cadastro Realizado!</h1>
+    <p>Nome: <%= nomeCrud %> </p>
+    <p>Sobrenome: <%= sobrenomeCrud %> </p>
+    <p>Idade: <%= idadeCrud %> </p>
+    <p>País: <%= paisCrud %> </p>
+    
+    <form action="/formulario-crud" method="POST">
+        <input type="hidden" name="nomeCrud" value="<%= nomeCrud %>">
+        <input type="hidden" name="sobrenomeCrud" value="<%= sobrenomeCrud %>">
+        <input type="hidden" name="idadeCrud" value="<%= idadeCrud %>">
+        <input type="hidden" name="paisCrud" value="<%= paisCrud %>">
+
+        <input type="submit" name="recadastrar" value="Editar informações">
+    </form>
+
+</body>
+
+</html>

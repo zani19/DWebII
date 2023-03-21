@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    <title>Atividade 2 - Média Ponderada</title>
+</head>
+<body>
+    <button><a href="/">HOME</a></button>
+
+    <h1>Insira as Notas das Atividades</h1>
+
+    <form action="/media" method="post">
+    <table>
+        <tr>
+          <th>Atividade</th>
+          <th>Peso da Nota</th>
+          <th>Digite sua Nota</th>
+        </tr>
+        <tr>
+          <td>Atividade prática em laboratório</td>
+          <td>2</td>
+          <td>
+                <label for="at_lab"></label>
+                <input type="number" id="at_lab" name="at_lab" required>
+          </td>
+        </tr>
+        <tr>
+          <td>Prova do semestre</td>
+          <td>5</td>
+          <td>
+                <label for="prova"></label>
+                <input type="number" id="prova" name="prova" required>            
+          </td>
+        </tr>
+        <tr>
+          <td>Trabalho Teórico</td>
+          <td>3</td>
+          <td>            
+                <label for="trabalho"></label>
+                <input type="number" id="trabalho" name="trabalho" required>
+          </td>
+        </tr>
+      </table>
+      <br>
+      <br>
+
+      <input type="submit" value="CALCULAR MÉDIA">
+
+    </form>
+      <br>
+
+      
+      
+
+      
+</body>
+</html>

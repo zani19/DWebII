@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=, initial-scale=1.0">
+  <title>ATIVIDADE 1</title>
+<link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+
+<body>
+  <button><a href="/">HOME</a></button>
+  <h1>Cadastro de Usuário</h1>
+
+  <form action="/crud" method="post">
+
+    <label for="nomeCrud">Nome</label>
+    <input type="text" id="nomeCrud" name="nomeCrud" value="<%= nomeCrud %>" required ><br><br>
+
+    <label for="sobrenomeCrud">Sobrenome</label>
+    <input type="text" id="sobrenomeCrud" name="sobrenomeCrud" value="<%= sobrenomeCrud %>" required><br><br>
+
+    <label for="idadeCrud">Idade</label>
+    <input type="number" id="idadeCrud" name="idadeCrud" value="<%= idadeCrud %>" required><br><br>
+
+
+    <label for="paisCrud">País</label>
+    <input type="text" id="paisCrud" name="paisCrud" value="<%= paisCrud %>"required><br><br>
+
+    <input type="submit" value="Cadastrar">
+
+  </form>
+  
+</body>
+
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    <title>Média</title>
+</head>
+
+<body>
+    <button><a href="/">HOME</a></button> <button><a href="/notas">VOLTAR</a></button>
+    <h1>Média Ponderada!</h1>
+    <table>
+        <tr>
+            <th>Atividade</th>
+            <th>Nota</th>
+        </tr>
+        <tr>
+          <td>Atividade prática em laboratório</td>
+          <td><%= at_lab %></td>          
+        </tr>
+        <tr>
+          <td>Prova do semestre</td>
+          <td><%= prova %></td>          
+        </tr>
+        <tr>
+          <td>Trabalho Teórico</td>
+          <td><%= trabalho %></td> 
+        </tr>
+        <tr>
+          <td>Média</td>
+          <td><%= media %></td> 
+        </tr>
+        <tr>
+          <td>Classificação</td>
+          <td><%= mediaFinal %></td> 
+        </tr>
+      </table>
+      <h2>A média do aluno é <%= media %> e sua classificação é <%= mediaFinal %> </h2>
+</body>
+
+</html>
